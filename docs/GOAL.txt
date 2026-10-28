@@ -1,0 +1,22 @@
+Implementiere die FUNKE-Pilotversion vollständig gemäß docs/SPEC.md (verbindlich: Produktumfang A–D, Gestaltung G.1–G.10, Technik T.1–T.12, Prüfungen P.1–P.8, Abnahmekriterien A1–A14). Lies zu Beginn und bei jeder Wiederaufnahme docs/SPEC.md und docs/PROGRESS.md, prüfe den tatsächlichen Codezustand und arbeite am ersten unerfüllten Kriterium weiter. Dokumentation ist Orientierung, kein Erfolgsbeweis.
+
+Arbeite in den Etappen aus SPEC.md Abschnitt 5. Nach jeder Etappe: Prüfungen ausführen, Fehler beheben, docs/PROGRESS.md aktualisieren (inkl. Durchlaufzähler), selbstständig weiterarbeiten. Entscheide gewöhnliche technische Fragen selbst. Committe nach jeder Etappe und pushe auf den Arbeitsbranch.
+
+ZIEL ERREICHT nur, wenn auf dem finalen Codestand nachweislich gilt:
+1. Alle Abnahmekriterien A1–A14 bestehen, jeweils belegt durch automatisierten Test oder konkreten Prüfbeleg.
+2. Der dokumentierte verify-Befehl (README) lief vollständig erfolgreich, endet bei Fehlern ungleich 0 und nutzt eine separate Test-Datenbank.
+3. Der Playwright-End-to-End-Test mit zwei getrennten Benutzersitzungen besteht: Projekt anlegen, einladen, beitreten, übernehmen, abschließen, Vorlage erzeugen, neues Projekt starten.
+4. Screenshots bei 390 und 1440 px Breite liegen vor und wurden auf Überläufe, verdeckte Bedienelemente und unlesbare Inhalte geprüft (auch automatisiert, z. B. scrollWidth <= innerWidth).
+5. A1 ist durch eine frische Installation in einem sauberen Klon nach README belegt; A12 durch echten Neustart der App mit erhaltenen Daten.
+6. docs/ACCEPTANCE.md listet jedes Kriterium mit bestanden/fehlgeschlagen/ungeprüft, Test oder Beleg, tatsächlich ausgeführten Befehlen mit Ergebnissen sowie bekannten Grenzen und verbleibenden Produktionsarbeiten.
+7. Die abschließenden Befehle und ihre echten Ausgaben (verify, E2E, Screenshot-Prüfung) sind im Gespräch sichtbar gezeigt.
+
+Ein Plan, eine Startseite, ein Bericht oder ungeprüfte Behauptungen zählen nicht als Fertigstellung.
+
+VERBOTEN: Pflichtanforderungen oder Abnahmekriterien ändern, streichen oder umdeuten; Tests löschen, überspringen, abschwächen oder so umbauen, dass sie das spezifizierte Verhalten nicht mehr prüfen; Attrappen für Kernfunktionen; produktive Standardpasswörter; Geheimnisse im Repository, Browser oder Log; KI-APIs, kostenpflichtige Dienste, öffentliche Bereitstellung.
+
+FEHLER: selbst beheben und weiterarbeiten, nicht beim ersten Problem stoppen.
+
+LIMIT: Spätestens nach 30 Durchläufen stoppen, mit ehrlichem Zwischenstand und aktualisierter docs/PROGRESS.md. Das Limit ist kein erfolgreicher Abschluss.
+
+BLOCKADE: Nur bei fehlenden Berechtigungen, Zugangsdaten oder nicht verfügbaren externen Voraussetzungen. Vorher alle unabhängigen Arbeiten erledigen, dann Ursache, versuchte Lösungen und den kleinsten notwendigen Eingriff exakt benennen. Keinen Erfolg behaupten.
