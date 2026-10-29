@@ -1,6 +1,6 @@
 # FUNKE, Fortschritt
 
-**Stand:** Etappen 1 bis 3 umgesetzt, Etappe 4 (Abnahme) läuft. Durchläufe: 1 / 30.
+**Stand:** Alle Etappen abgeschlossen, A1 bis A14 bestanden (Nachweis: docs/ACCEPTANCE.md). Durchläufe: 1 / 30.
 
 ## Umgebung (geprüft 2026-10-28)
 - Node 22.22, npm 10.9, pnpm 10.28, PostgreSQL 16 Client, Python 3.13
@@ -19,12 +19,10 @@
 1. [x] Etappe 1: Persistenz, Anmeldung, Rollen, Projekte (Unit-Tests access.test.ts)
 2. [x] Etappe 2: Einladungen, Missionen, Zusammenarbeit (invites.test.ts, missions.test.ts inkl. 8 parallele Prozesse)
 3. [x] Etappe 3: Fokus, Wiedereinstieg, Vorlagen (focus-reentry.test.ts, templates.test.ts)
-4. [ ] Etappe 4: Gestaltung, Fehlerfälle, Abnahme (E2E bestehen; verify, frische Installation, ACCEPTANCE.md offen)
+4. [x] Etappe 4: Gestaltung, Fehlerfälle, Abnahme (16 E2E-Tests, Barrierefreiheit, verify im frischen Klon EXIT=0, ACCEPTANCE.md)
 
 ## Offene Aufgaben
-- Vollständiger `pnpm verify`-Lauf auf finalem Stand
-- A1: frische Installation in sauberem Klon nach README
-- docs/ACCEPTANCE.md
+- Keine Pflichtaufgaben offen. Produktionsarbeiten und bekannte Grenzen: siehe docs/ACCEPTANCE.md.
 
 ## Behobene Funde (Auszug)
 - Blockade-Meldung: falsche Reihenfolge/Grammatik (Unit-Test)
@@ -33,7 +31,7 @@
 - Router-Cache zeigte nach Speichern alten Stand (E2E) → `router.refresh()` nach Weiterleitung
 - `pnpm setup` kollidiert mit pnpm-Befehl → `pnpm env:init`
 - Grammatik „mit mittel Energie“, fehlendes Aufklapp-Symbol (Sichtprüfung Screenshots)
+- Edge-Runtime-Warnung der Middleware → Node-Runtime-Middleware (Next 15.5)
 
-## Mögliche externe Blockaden
-- npm-Registry über Proxy nicht erreichbar → Paketinstallation unmöglich
-- Prisma-Engine-Download blockiert → Ausweichen auf Drizzle + better-sqlite3
+## Externe Blockaden
+- Keine aufgetreten. npm-Registry erreichbar, Chromium vorinstalliert.
