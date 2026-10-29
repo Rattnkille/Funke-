@@ -16,6 +16,15 @@ Pizza-Backtag. Kinder und betreute Teilnehmende brauchen kein Konto. Alle Beispi
 
 Keine kostenpflichtigen Dienste, keine externen Server. Die Datenbank ist eine lokale SQLite-Datei.
 
+## Schnellstart (ein Befehl, Mac und Linux)
+
+```bash
+./start-lokal.sh
+```
+
+Prüft Node 22 und pnpm, installiert alles, legt Demo-Daten an (Passwort wird einmalig angezeigt) und startet
+die App auf http://localhost:3000.
+
 ## Installation (frisch)
 
 ```bash
