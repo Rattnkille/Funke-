@@ -11,5 +11,6 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
+  runtime: "nodejs",
   matcher: ["/start", "/projekte/:path*", "/vorlagen/:path*", "/einladung/:path*"],
 };
